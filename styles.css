@@ -31,14 +31,14 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 0 50px;
     height: 80px;
+    background-color: aliceblue;
 }
 
 nav .left a {
     color: var(--text-color);
-    font-size: 22px;
+    font-size: 26px;
     font-weight: 700;
 }
 
@@ -50,8 +50,13 @@ nav .right a {
 nav .right a:last-child {
     color: var(--background-color);
     background-color: var(--text-color);
-    padding: 5 15px;
+    padding: 5px 20px;
     border-radius: 5px;
+}
+
+nav .right a:last-child:hover {
+    background-color: #cb6206;
+    color: white;
 }
 
 nav .right a span {
@@ -63,19 +68,22 @@ nav .right a span {
 .hero-section {
     display: flex;
     justify-content: space-between;
-    padding: 0 50px;
+    padding: 0 50px 30px 50px;
     margin: 50px 0;
     align-items:  center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     gap: 40px;
+    background-color: rgb(254, 247, 239);
 }
 
 .hero-section .text {
     flex: 5;
+    text-align: justify;
+    line-height: 1.9em;
 }
 
 .hero-section .text h2 {
-    font-size: 45px;
+    font-size: 30px;
 }
 
 .hero-section .text .links {
@@ -111,17 +119,19 @@ nav .right a span {
 /*Section Two: Skills Section*/
 .skills-section {
     padding: 0 50px;
-    margin-bottom: 100px;
+    background-color: var(--background-color);
 }
 
 .skills-section h2 {
-    text-align: center;
-    font-size: 35px;
+    text-align: left;
+    font-size: 30px;
 }
 
 .skills-section .text {
     text-align: center;
     margin-bottom: 20px;
+    text-align: justify;
+    line-height: 1.8em;
 }
 
 .skills-section .cells {
@@ -150,6 +160,14 @@ nav .right a span {
     object-fit: contain;
     border-radius: 2px;
 }
+
+.skills-section .cell:hover {
+    background-color: #04162c;
+    color: white;
+    cursor: pointer;
+
+}
+
 
 .skills-section .cells .cell span {
     font-size: 18px;
@@ -193,7 +211,9 @@ nav .right a span {
 }
 
 .testimony-section .group .text {
+    text-align: justify;
     flex: 8;
+    line-height: 1.8em;
 }
 
 @media (max-width: 850px) {
@@ -206,8 +226,8 @@ nav .right a span {
 
 /*Section four: Contact Section*/
 .contact-section {
-    padding: 0 50px;
-    margin-bottom: 100px;
+    padding: 0 50px 100px 50px;
+    background-color: rgb(254, 247, 239);
 }
 
 .contact-section h2 {
@@ -221,6 +241,7 @@ nav .right a span {
 .contact-section .group .text {
     flex: 3;
     margin-top: 20px;
+    text-align: justify;
 }
 
 .contact-section .group form {
@@ -232,7 +253,7 @@ nav .right a span {
 .contact-section .group form input,
 .contact-section .group form textarea {
     font-family: 'Poppins', sans-serif;
-    border: 2px solid var(--link-color);
+    border: 2px solid #cb6206;
     background-color: transparent;
     padding: 10px;
     margin-bottom: 15px;
@@ -244,7 +265,7 @@ nav .right a span {
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     color: #fff;
-    background-color: var(--link-color);
+    background-color: #cb6206;
     border: none;
     border-radius: 5px;
     height: 50px;
@@ -254,6 +275,13 @@ nav .right a span {
 
 .contact-section .group form button:hover {
     filter: brightness(.9);
+}
+
+footer{
+    padding: 30px;
+    text-align: center;
+    background-color: #04162c;
+    color: white;
 }
 
 @media (max-width: 740px) {
